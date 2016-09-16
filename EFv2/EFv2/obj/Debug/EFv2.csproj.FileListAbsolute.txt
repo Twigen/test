@@ -1,0 +1,10 @@
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\bin\Debug\EFv2.exe.config
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\bin\Debug\EFv2.exe
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\bin\Debug\EFv2.pdb
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\bin\Debug\EntityFramework.dll
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\bin\Debug\EntityFramework.xml
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\obj\Debug\EFv2.csprojResolveAssemblyReference.cache
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\obj\Debug\EFv2.exe
+c:\users\norbert\documents\visual studio 2015\Projects\EFv2\EFv2\obj\Debug\EFv2.pdb

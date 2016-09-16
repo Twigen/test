@@ -1,0 +1,15 @@
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\PersonApplication.exe.config
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.csprojResolveAssemblyReference.cache
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.Form1.resources
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.Properties.Resources.resources
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.csproj.GenerateResource.Cache
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\PersonApplication.exe
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\PersonApplication.pdb
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\PersonDatabase.dll
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\EntityFramework.dll
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\PersonDatabase.pdb
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\EntityFramework.xml
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.exe
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.pdb
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\EntityFramework.SqlServer.xml

@@ -10,7 +10,7 @@ namespace PersonDatabase.Operations
 {
     public class PersonOp
     {
-        public static void TelAdd(string s)
+        public static void TelAdd(string nametb,string surnametb, string tele, string addresstb)
         {
             using (var db = new PersonContext())
             {
@@ -18,7 +18,7 @@ namespace PersonDatabase.Operations
 
 
 
-                var tel = new Person { telNumber = int.Parse(s) };
+                var tel = new Person {name=nametb,surname = surnametb, telNumber = int.Parse(tele), address = addresstb };
                 db.Persons.Add(tel);
                 db.SaveChanges();
             }

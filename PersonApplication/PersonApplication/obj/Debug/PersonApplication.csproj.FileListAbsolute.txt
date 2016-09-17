@@ -1,6 +1,5 @@
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\PersonApplication.exe.config
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.csprojResolveAssemblyReference.cache
-c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.Form1.resources
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.Properties.Resources.resources
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.csproj.GenerateResource.Cache
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\PersonApplication.exe
@@ -13,3 +12,5 @@ c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonA
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.pdb
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\EntityFramework.SqlServer.dll
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.AddPerson.resources
+c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.Display.resources

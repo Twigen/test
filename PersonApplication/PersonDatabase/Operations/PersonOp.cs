@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ref;
 
 namespace PersonDatabase.Operations
 {
@@ -14,14 +15,11 @@ namespace PersonDatabase.Operations
         {
             using (var db = new PersonContext())
             {
-                // Create and save a new Blog 
-
-
-
                 var tel = new Person {name=nametb,surname = surnametb, telNumber = int.Parse(tele), address = addresstb };
                 db.Persons.Add(tel);
                 db.SaveChanges();
             }
         }
+        
     }
 }

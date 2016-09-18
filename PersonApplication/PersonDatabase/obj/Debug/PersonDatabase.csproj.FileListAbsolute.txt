@@ -8,3 +8,5 @@ c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonD
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonDatabase\obj\Debug\PersonDatabase.csprojResolveAssemblyReference.cache
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonDatabase\obj\Debug\PersonDatabase.dll
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonDatabase\obj\Debug\PersonDatabase.pdb
+C:\Users\Norbert\Documents\Visual Studio 2015\Projects\PersonApplication\PersonDatabase\bin\Debug\Ref.exe
+C:\Users\Norbert\Documents\Visual Studio 2015\Projects\PersonApplication\PersonDatabase\bin\Debug\Ref.pdb

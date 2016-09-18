@@ -67,18 +67,22 @@
     <Compile Include="Display.Designer.cs">
       <DependentUpon>Display.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPerson.Designer.cs">
+      <DependentUpon>EditPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="_PersonDatabase_Context_PersonContextDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_PersonDatabase_Context_PersonContextDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AddPerson.resx">
       <DependentUpon>AddPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Display.resx">
       <DependentUpon>Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPerson.resx">
+      <DependentUpon>EditPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,17 +103,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_PersonDatabase_Context_PersonContextDataSet.xsc">
-      <DependentUpon>_PersonDatabase_Context_PersonContextDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_PersonDatabase_Context_PersonContextDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_PersonDatabase_Context_PersonContextDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_PersonDatabase_Context_PersonContextDataSet.xss">
-      <DependentUpon>_PersonDatabase_Context_PersonContextDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -118,6 +111,10 @@
     <ProjectReference Include="..\PersonDatabase\PersonDatabase.csproj">
       <Project>{29289d91-ee63-4652-a665-295abee9935d}</Project>
       <Name>PersonDatabase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ref\Ref.csproj">
+      <Project>{9e320805-0934-40fb-8ce6-152020fe9189}</Project>
+      <Name>Ref</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

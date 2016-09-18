@@ -21,6 +21,8 @@ namespace PersonApplication
         private void telAdd_Click(object sender, EventArgs e)
         {
             PersonOp.TelAdd(nameTb.Text,surnameTb.Text, telephoneTb.Text,addressTb.Text);
+            MessageBox.Show("Data saved");
+            this.Close();
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PersonDatabase.Context;
 using PersonDatabase.Operations;
+using PersonDatabase.Entity;
 
 namespace PersonApplication
 {
@@ -16,37 +17,60 @@ namespace PersonApplication
     {
         public Display()
         {
-            
+
             InitializeComponent();
-            
+
         }
 
         private void Display_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_PersonDatabase_Context_PersonContextDataSet.People' table. You can move, or remove it, as needed.
-            using (var context = new PersonContext())
-            {
-                var list = context.Persons.ToList();
-                this.peopleBindingSource.DataSource = list;
-               
-            }
+            ReloadGrid();
 
         }
 
-        private void peopleBindingSource_CurrentChanged(object sender, EventArgs e)
+        private void ReloadGrid()
         {
-            
+          
+            List<Person> persons = PersonOperations.GetAll();
+          
+            List<PersonViewModel> viewModels = persons.Select(p => new PersonViewModel
+            {
+                address = p.address,
+                name = p.name,
+                surname = p.surname,
+                PersonId = p.PersonId,
+                telNumbers = FormatTelephoneNumbers(p)
+            })
+            .ToList();
+            this.peopleBindingSource.DataSource = viewModels;
         }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            AddPerson f2 = new AddPerson();
-            f2.Show();
+            PersonViewModel selectedPerson = this.peopleBindingSource.Current as PersonViewModel;
+            AddPerson f2 = new AddPerson(selectedPerson.PersonId);
+            if(f2.ShowDialog() == DialogResult.OK)
+            {
+                ReloadGrid();
+            }
         }
 
         private void editBtn_Click(object sender, EventArgs e)
         {
+            PersonViewModel selectedPerson = this.peopleBindingSource.Current as PersonViewModel;
             
+            EditPerson editPersonForm = new EditPerson(selectedPerson.PersonId);
+           if(editPersonForm.ShowDialog() == DialogResult.OK)
+            {
+                ReloadGrid();
+            }
+        }
+
+        private static string FormatTelephoneNumbers(Person p)
+        {
+            return p.Telephones != null ?
+                string.Join(" ", p.Telephones.Select((Telephone t) => t.Number.ToString()))
+                : string.Empty;
         }
     }
 }

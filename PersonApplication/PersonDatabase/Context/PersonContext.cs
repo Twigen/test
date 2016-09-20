@@ -10,7 +10,7 @@ namespace PersonDatabase.Context
 {
    public class PersonContext : DbContext
     {
-      public  DbSet<Person> Persons { get; set; }
-        
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Telephone> Telephones { get; set; }
     }
 }

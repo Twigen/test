@@ -73,6 +73,7 @@
     <Compile Include="EditPerson.Designer.cs">
       <DependentUpon>EditPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddPerson.resx">
@@ -111,10 +112,6 @@
     <ProjectReference Include="..\PersonDatabase\PersonDatabase.csproj">
       <Project>{29289d91-ee63-4652-a665-295abee9935d}</Project>
       <Name>PersonDatabase</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ref\Ref.csproj">
-      <Project>{9e320805-0934-40fb-8ce6-152020fe9189}</Project>
-      <Name>Ref</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

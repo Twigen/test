@@ -15,5 +15,3 @@ c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonA
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.AddPerson.resources
 c:\users\norbert\documents\visual studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.Display.resources
 C:\Users\Norbert\Documents\Visual Studio 2015\Projects\PersonApplication\PersonApplication\obj\Debug\PersonApplication.EditPerson.resources
-C:\Users\Norbert\Documents\Visual Studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\Ref.exe
-C:\Users\Norbert\Documents\Visual Studio 2015\Projects\PersonApplication\PersonApplication\bin\Debug\Ref.pdb

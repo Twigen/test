@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.nameTbEp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,8 +36,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.surnameTbEp = new System.Windows.Forms.TextBox();
             this.addressTbEp = new System.Windows.Forms.TextBox();
-            this.telNumberEp = new System.Windows.Forms.TextBox();
+            this.telNumberTbEp = new System.Windows.Forms.TextBox();
             this.editBtnEditPerson = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // nameTbEp
@@ -96,12 +98,12 @@
             this.addressTbEp.Size = new System.Drawing.Size(140, 20);
             this.addressTbEp.TabIndex = 6;
             // 
-            // telNumberEp
+            // telNumberTbEp
             // 
-            this.telNumberEp.Location = new System.Drawing.Point(219, 55);
-            this.telNumberEp.Name = "telNumberEp";
-            this.telNumberEp.Size = new System.Drawing.Size(140, 20);
-            this.telNumberEp.TabIndex = 7;
+            this.telNumberTbEp.Location = new System.Drawing.Point(219, 55);
+            this.telNumberTbEp.Name = "telNumberTbEp";
+            this.telNumberTbEp.Size = new System.Drawing.Size(140, 20);
+            this.telNumberTbEp.TabIndex = 7;
             // 
             // editBtnEditPerson
             // 
@@ -111,6 +113,12 @@
             this.editBtnEditPerson.TabIndex = 8;
             this.editBtnEditPerson.Text = "Edit";
             this.editBtnEditPerson.UseVisualStyleBackColor = true;
+            this.editBtnEditPerson.Click += new System.EventHandler(this.editBtnEditPerson_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
             // 
             // EditPerson
             // 
@@ -118,7 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 283);
             this.Controls.Add(this.editBtnEditPerson);
-            this.Controls.Add(this.telNumberEp);
+            this.Controls.Add(this.telNumberTbEp);
             this.Controls.Add(this.addressTbEp);
             this.Controls.Add(this.surnameTbEp);
             this.Controls.Add(this.label4);
@@ -128,6 +136,7 @@
             this.Controls.Add(this.nameTbEp);
             this.Name = "EditPerson";
             this.Text = "EditPerson";
+            this.Load += new System.EventHandler(this.EditPerson_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,7 +151,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox surnameTbEp;
         private System.Windows.Forms.TextBox addressTbEp;
-        private System.Windows.Forms.TextBox telNumberEp;
+        private System.Windows.Forms.TextBox telNumberTbEp;
         private System.Windows.Forms.Button editBtnEditPerson;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

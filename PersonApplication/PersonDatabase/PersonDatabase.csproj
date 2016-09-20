@@ -49,10 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseMain.cs" />
     <Compile Include="Context\PersonContext.cs" />
     <Compile Include="Entity\Person.cs" />
-    <Compile Include="Operations\PersonOp.cs" />
+    <Compile Include="Entity\Telephone.cs" />
+    <Compile Include="Migrations\201609161519487_InitialCreate.cs" />
+    <Compile Include="Migrations\201609161519487_InitialCreate.Designer.cs">
+      <DependentUpon>201609161519487_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191613312_AddedTelephoneNumberRelationship.cs" />
+    <Compile Include="Migrations\201609191613312_AddedTelephoneNumberRelationship.Designer.cs">
+      <DependentUpon>201609191613312_AddedTelephoneNumberRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Operations\PersonOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,10 +69,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ref\Ref.csproj">
-      <Project>{9e320805-0934-40fb-8ce6-152020fe9189}</Project>
-      <Name>Ref</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="Migrations\201609161519487_InitialCreate.resx">
+      <DependentUpon>201609161519487_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191613312_AddedTelephoneNumberRelationship.resx">
+      <DependentUpon>201609191613312_AddedTelephoneNumberRelationship.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

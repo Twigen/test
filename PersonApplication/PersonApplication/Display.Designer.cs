@@ -35,10 +35,10 @@
             this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.peopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addBtn = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
             this.removeBtn = new System.Windows.Forms.Button();
-            this.peopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +47,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PersonId,
@@ -54,9 +55,11 @@
             this.surname,
             this.telNumber,
             this.address});
+            this.dataGridView1.DataSource = this.peopleBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(31, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(540, 292);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -83,7 +86,7 @@
             // 
             // telNumber
             // 
-            this.telNumber.DataPropertyName = "telNumber";
+            this.telNumber.DataPropertyName = "telNumbers";
             this.telNumber.HeaderText = "telNumber";
             this.telNumber.Name = "telNumber";
             this.telNumber.ReadOnly = true;
@@ -124,10 +127,6 @@
             this.removeBtn.Text = "Remove person";
             this.removeBtn.UseVisualStyleBackColor = true;
             // 
-            // peopleBindingSource
-            // 
-            this.peopleBindingSource.CurrentChanged += new System.EventHandler(this.peopleBindingSource_CurrentChanged);
-            // 
             // Display
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,13 +149,13 @@
         private System.Windows.Forms.BindingSource peopleBindingSource;
         
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button addBtn;
+        private System.Windows.Forms.Button editBtn;
+        private System.Windows.Forms.Button removeBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn PersonId;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn surname;
         private System.Windows.Forms.DataGridViewTextBoxColumn telNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
-        private System.Windows.Forms.Button addBtn;
-        private System.Windows.Forms.Button editBtn;
-        private System.Windows.Forms.Button removeBtn;
     }
 }

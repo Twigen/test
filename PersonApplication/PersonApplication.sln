@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonApplication", "Person
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDatabase", "PersonDatabase\PersonDatabase.csproj", "{29289D91-EE63-4652-A665-295ABEE9935D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ref", "Ref\Ref.csproj", "{9E320805-0934-40FB-8CE6-152020FE9189}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{29289D91-EE63-4652-A665-295ABEE9935D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29289D91-EE63-4652-A665-295ABEE9935D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29289D91-EE63-4652-A665-295ABEE9935D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E320805-0934-40FB-8CE6-152020FE9189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E320805-0934-40FB-8CE6-152020FE9189}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E320805-0934-40FB-8CE6-152020FE9189}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E320805-0934-40FB-8CE6-152020FE9189}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

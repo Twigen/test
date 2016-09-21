@@ -44,6 +44,10 @@
             this.newTelNumberTb = new System.Windows.Forms.TextBox();
             this.telNumberList = new System.Windows.Forms.ListBox();
             this.telNumbersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.addressList = new System.Windows.Forms.ListBox();
+            this.addAddressBtn = new System.Windows.Forms.Button();
+            this.deleteAddressBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.telNumbersBindingSource)).BeginInit();
@@ -51,7 +55,7 @@
             // 
             // telAdd
             // 
-            this.telAdd.Location = new System.Drawing.Point(263, 285);
+            this.telAdd.Location = new System.Drawing.Point(263, 397);
             this.telAdd.Name = "telAdd";
             this.telAdd.Size = new System.Drawing.Size(119, 23);
             this.telAdd.TabIndex = 1;
@@ -181,11 +185,50 @@
             this.telNumberList.Size = new System.Drawing.Size(382, 56);
             this.telNumberList.TabIndex = 0;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(11, 319);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "New Address";
+            // 
+            // addressList
+            // 
+            this.addressList.FormattingEnabled = true;
+            this.addressList.Location = new System.Drawing.Point(6, 335);
+            this.addressList.Name = "addressList";
+            this.addressList.Size = new System.Drawing.Size(382, 56);
+            this.addressList.TabIndex = 12;
+            // 
+            // addAddressBtn
+            // 
+            this.addAddressBtn.Location = new System.Drawing.Point(227, 306);
+            this.addAddressBtn.Name = "addAddressBtn";
+            this.addAddressBtn.Size = new System.Drawing.Size(75, 23);
+            this.addAddressBtn.TabIndex = 13;
+            this.addAddressBtn.Text = "Add address";
+            this.addAddressBtn.UseVisualStyleBackColor = true;
+            // 
+            // deleteAddressBtn
+            // 
+            this.deleteAddressBtn.Location = new System.Drawing.Point(307, 306);
+            this.deleteAddressBtn.Name = "deleteAddressBtn";
+            this.deleteAddressBtn.Size = new System.Drawing.Size(75, 23);
+            this.deleteAddressBtn.TabIndex = 14;
+            this.deleteAddressBtn.Text = "Delete";
+            this.deleteAddressBtn.UseVisualStyleBackColor = true;
+            // 
             // AddPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 320);
+            this.ClientSize = new System.Drawing.Size(394, 432);
+            this.Controls.Add(this.deleteAddressBtn);
+            this.Controls.Add(this.addAddressBtn);
+            this.Controls.Add(this.addressList);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.telAdd);
@@ -198,6 +241,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.telNumbersBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -217,6 +261,10 @@
         private System.Windows.Forms.TextBox newTelNumberTb;
         private System.Windows.Forms.ListBox telNumberList;
         private System.Windows.Forms.BindingSource telNumbersBindingSource;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListBox addressList;
+        private System.Windows.Forms.Button addAddressBtn;
+        private System.Windows.Forms.Button deleteAddressBtn;
     }
 }
 

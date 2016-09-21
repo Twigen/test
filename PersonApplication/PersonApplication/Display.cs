@@ -47,8 +47,9 @@ namespace PersonApplication
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            PersonViewModel selectedPerson = this.peopleBindingSource.Current as PersonViewModel;
-            AddPerson f2 = new AddPerson(selectedPerson.PersonId);
+            //PersonViewModel selectedPerson = this.peopleBindingSource.Current as PersonViewModel;
+            
+            AddPerson f2 = new AddPerson();
             if(f2.ShowDialog() == DialogResult.OK)
             {
                 ReloadGrid();

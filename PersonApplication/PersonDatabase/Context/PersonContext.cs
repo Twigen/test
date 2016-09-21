@@ -12,5 +12,6 @@ namespace PersonDatabase.Context
     {
         public DbSet<Person> Persons { get; set; }
         public DbSet<Telephone> Telephones { get; set; }
+        public DbSet<Address> Addresses { get; set; }
     }
 }

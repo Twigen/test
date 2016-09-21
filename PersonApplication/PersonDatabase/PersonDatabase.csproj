@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\PersonContext.cs" />
+    <Compile Include="Entity\Address.cs" />
     <Compile Include="Entity\Person.cs" />
     <Compile Include="Entity\Telephone.cs" />
     <Compile Include="Migrations\201609161519487_InitialCreate.cs" />
@@ -61,7 +62,9 @@
       <DependentUpon>201609191613312_AddedTelephoneNumberRelationship.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Operations\AddressOperations.cs" />
     <Compile Include="Operations\PersonOperations.cs" />
+    <Compile Include="Operations\TelephoneOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

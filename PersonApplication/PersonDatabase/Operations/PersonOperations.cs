@@ -10,7 +10,7 @@ namespace PersonDatabase.Operations
 {
     public class PersonOperations
     {
-        public static void AddPerson(string nametb, string surnametb, string addresstb, List<string> list, int id)
+        public static Person AddPerson(string nametb, string surnametb, string addresstb)
         {
             using (var db = new PersonContext())
             {
@@ -22,20 +22,8 @@ namespace PersonDatabase.Operations
                 };
 
                 db.Persons.Add(person);
-                //     db.SaveChanges();
-                Telephone telephone = new Telephone();
-                foreach (string t in list )
-                {
-                    telephone.Number = int.Parse(t);
-                    db.Telephones.Add(telephone);
-                    db.SaveChanges();
-                }
-                //{
-                //    Number = int.Parse(list[0]),
-                    
-                //};
-               // db.Telephones.Add(telephone);
                 db.SaveChanges();
+                return person;
             }
         }
 
@@ -46,16 +34,14 @@ namespace PersonDatabase.Operations
                 return context.Persons.FirstOrDefault(p => p.PersonId == personId);
             }
         }
-        //public static List<Telephone> GetTelephone(int personId)
-        //{
-        //    List<Telephone> list = new List<Telephone>();
-        //    using (var context = new PersonContext())
-        //    {
-        //        foreach (Telephone)
-
-        //            List<int> n= context.Telephones.Include(Telephone.)
-        //    }
-        //}
+        public static List<Telephone> GetTelephone(int personId)
+        {
+            List<Telephone> list = new List<Telephone>();
+            using (var context = new PersonContext())
+            {
+                return  context.Telephones.Where(p => p.PersonId == personId).ToList();
+            }
+        }
         public static List<Person> GetAll()
         {
             using (var context = new PersonContext())
@@ -67,15 +53,7 @@ namespace PersonDatabase.Operations
             }
 
         }
-        public static List<Telephone> GetAllT()
-        {
-            using (var context = new PersonContext())
-            {
-                return context.Telephones.ToList();
-
-            }
-
-        }
+       
 
 
         public static void Update(Person edit)
@@ -89,5 +67,6 @@ namespace PersonDatabase.Operations
                 context.SaveChanges();
             }
         }
+        
     }
 }

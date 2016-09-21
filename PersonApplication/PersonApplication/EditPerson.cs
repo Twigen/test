@@ -16,7 +16,7 @@ namespace PersonApplication
     {
         private int personId;
 
-        
+
 
         public EditPerson(int personId)
         {
@@ -31,8 +31,11 @@ namespace PersonApplication
             nameTbEp.Text = edit.name;
             surnameTbEp.Text = edit.surname;
             addressTbEp.Text = edit.address;
-           // Telephone teleEdit = 
-
+            List<Telephone> teleEdit = PersonOperations.GetTelephone(personId);
+            foreach (Telephone t in teleEdit)
+            {
+                telephoneEditList.Items.Add(t.Number);
+            }
         }
 
         private void editBtnEditPerson_Click(object sender, EventArgs e)
@@ -46,8 +49,22 @@ namespace PersonApplication
 
             };
             PersonOperations.Update(edit);
+            List<int> telephoneNumberList = new List<int>();
+
+            foreach (DataRowView drv in telephoneEditList.Items)
+            {
+                telephoneNumberList.Add( int.Parse(drv.Row[telephoneEditList.ValueMember].ToString()));
+                
+            }
+
+
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void editTelephoneBtn_Click(object sender, EventArgs e)
+        {
+            telephoneEditList.Items[telephoneEditList.SelectedIndex] = telephoneEditTb.Text;
         }
     }
 }

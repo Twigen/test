@@ -14,5 +14,6 @@ namespace PersonDatabase.Entity
         public string address { get; set; }
 
         public virtual ICollection<Telephone> Telephones { get; set; }
+        public virtual ICollection<Address> Addresses { get; set; }
     }
 }
